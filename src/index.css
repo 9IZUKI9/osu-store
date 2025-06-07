@@ -1,0 +1,106 @@
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/public/assets/fonts/Inter-Regular.1011a20f.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/public/assets/fonts/Inter-Italic.45ce8e8e.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/public/assets/fonts/Inter-Medium.1adb92f9.woff2) format("woff2")
+}
+
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/public/assets/fonts/Inter-SemiBold.455befe4.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/public/assets/fonts/Inter-Bold.608bcc79.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 700;
+    src: url(/public/assets/fonts/Inter-BoldItalic.cc464783.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    src: url(/public/assets/fonts/Inter-ExtraBold.01b96605.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 800;
+    src: url(/public/assets/fonts/Inter-ExtraBoldItalic.87e87931.woff2) format("woff2")
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #18181a;
+    min-height: 2287px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    color: #fff;
+    font-family: Torus,Inter,Helvetica Neue,Tahoma,Arial,Hiragino Kaku Gothic ProN,Meiryo,Microsoft YaHei,Apple SD Gothic Neo,sans-serif;
+}   
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
