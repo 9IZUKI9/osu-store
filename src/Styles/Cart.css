@@ -1,0 +1,33 @@
+header {
+    border-radius: 40px;
+}
+
+.osu-page {
+    border-radius: 40px;
+}
+
+.cart__info {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px 33px 40px;
+    font-size: 30px;
+    gap: 10px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+
+}
+
+a {
+    color: #c6c6d4;
+    outline-style: none;
+    text-decoration: none;
+    transition: color 80ms linear;
+    font-weight: 800;
+}

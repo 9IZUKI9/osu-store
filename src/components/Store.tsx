@@ -1,6 +1,7 @@
-import '../Styles/Store.css'
+import '../Styles/OsuStore.css'
 import { useState } from 'react'
 import StoreProduct from './StoreProduct.tsx'
+import NavBar from './NavBar.tsx';
 
 function Store() {
 
@@ -20,10 +21,10 @@ function Store() {
         {bg:"assets/products/buttons", row:'8', column:'1', name: 'osu!buttons'},
         {bg:"assets/products/name-change", row:'8', column:'2', name: 'Player Name Change'},
         {bg:"assets/products/tablet", row:'9', column:'1', name: 'osu!tablet'}
-];
+    ];
 
     return (
-        <div className='store'>
+        <div className='store' style={{width: 1000}}>
             <header>
                 <div className='header-content'>
                     <div className='header-content__title'>
@@ -38,22 +39,8 @@ function Store() {
                 </div>
                 
             </header>
-            
-            <nav className='store-nav'>
-                <ul>
-                    <li className='store-nav__item'>
-                        <a className='store-nav__link' href='#'>products</a>
-                    </li>
 
-                    <li className='store-nav__item'>
-                        <a className='store-nav__link' href='#'>card</a>
-                    </li>
-
-                    <li className='store-nav__item'>
-                        <a className='store-nav__link' href='#'>order history</a>
-                    </li>
-                </ul>
-            </nav>
+            <NavBar />
 
             <div className='osu-page'>
                 <div className="store-products">
