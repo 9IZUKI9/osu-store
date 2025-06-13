@@ -6,22 +6,6 @@ function NavBar() {
     return (
         <nav className='store-nav'>
 
-            {/* <Link to='/osu-store/'>
-                <div className='store-nav__item'>
-                    <div className='store-nav__link'>products</div>
-                </div>
-            </Link>
-
-            <Routes>
-                <Route exact path='/osu-store/' element={
-                    <Link to='src/pages/history.tsx'>
-                        <div className='store-nav__item'>
-                            <div className='store-nav__link'>history</div>
-                        </div>
-                    </Link>
-                } />
-            </Routes> */}
-
             <ul>
                 <li className='store-nav__item'>
                     <a className='store-nav__link' href='#'>products</a>
