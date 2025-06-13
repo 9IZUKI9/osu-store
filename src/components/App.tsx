@@ -4,7 +4,7 @@ import History from "../pages/history"
 
 function App() {
   return (
-      <History />
+      <Store />
   );
 }
 

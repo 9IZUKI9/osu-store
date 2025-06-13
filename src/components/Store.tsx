@@ -2,6 +2,7 @@ import '../Styles/Home.css'
 import { useState } from 'react'
 import StoreProduct from './StoreProduct.tsx'
 import NavBar from './NavBar.tsx';
+import '../Styles/Store.css'
 
 function Store() {
 
