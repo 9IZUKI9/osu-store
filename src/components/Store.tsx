@@ -1,4 +1,4 @@
-import '../Styles/OsuStore.css'
+import '../Styles/Home.css'
 import { useState } from 'react'
 import StoreProduct from './StoreProduct.tsx'
 import NavBar from './NavBar.tsx';
@@ -24,7 +24,7 @@ function Store() {
     ];
 
     return (
-        <div className='store' style={{width: 1000}}>
+        <div className='osu-page'>
             <header>
                 <div className='header-content'>
                     <div className='header-content__title'>
@@ -42,14 +42,11 @@ function Store() {
 
             <NavBar />
 
-            <div className='osu-page'>
-                <div className="store-products">
-                    {products.map((props) => (
-                        <StoreProduct {...props}/>
-                    ))}
-                </div>
+            <div className="store-products">
+                {products.map((props) => (
+                    <StoreProduct {...props}/>
+                ))}
             </div>
-            
         </div>
     )
 }

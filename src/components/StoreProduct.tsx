@@ -1,4 +1,4 @@
-import '../Styles/StoreProduct.css'
+import '../Styles/Home.css'
 import { useState } from 'react';
 
 function StoreProduct({bg, column, row, width = '480px', height = '200px', name, fontSize = '30px'}) {

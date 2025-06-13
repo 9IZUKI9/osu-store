@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar"
 
 function History() {
     return (
-        <div className='store'>
+        <div className='osu-page'>
             <header>
                 <div className='header-content'>
                     <div className='header-content__title'>
@@ -18,20 +18,13 @@ function History() {
                         </div>
                     </div>
                 </div>
-                
             </header>
 
             <NavBar />
 
-            <div className='osu-page'>
-                <div className="history">
-                    Shopping Cart
-Your cart is empty.
-
-Return to the store listing to find some goodies!
-                </div>
+            <div className="history">
+                Хуй
             </div>
-            
         </div>
     )
 }

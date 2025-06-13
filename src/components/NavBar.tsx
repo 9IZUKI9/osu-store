@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import '../Styles/StoreProduct.css'
+import '../Styles/Home.css'
 
 function NavBar() {
     return (
@@ -28,7 +28,7 @@ function NavBar() {
                 </li>
 
                 <li className='store-nav__item'>
-                    <a className='store-nav__link' href='#'>card</a>
+                    <a className='store-nav__link' href='#'>cart</a>
                 </li>
 
                 <li className='store-nav__item'>
