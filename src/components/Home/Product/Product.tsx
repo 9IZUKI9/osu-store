@@ -16,6 +16,7 @@ function Product({bg, column, row, width = '480px', height = '200px', name, font
             height,
             width,
         }}>
+            
             <h1 className={styles.product__name} style={{fontSize}}>
             {name}
             </h1>
