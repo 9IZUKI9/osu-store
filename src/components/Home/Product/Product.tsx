@@ -1,15 +1,14 @@
-import './Product.css'
-import { useState } from 'react';
+import styles from './Product.module.css'
+import { useState } from 'react'
 
 function Product({bg, column, row, width = '480px', height = '200px', name, fontSize = '30px'}) {
-
     const [count, setCount] = useState(0)
     const increment = () => setCount(count + 1);
     const decrement = () => setCount(count - 1);
 
     return (
         <a
-        className='product-box' 
+        className={styles.product} 
         href='#' 
         style={{
             backgroundImage: `url(${bg})`,
@@ -17,11 +16,11 @@ function Product({bg, column, row, width = '480px', height = '200px', name, font
             height,
             width,
         }}>
-            <h1 className='product-name' style={{fontSize}}>
+            <h1 className={styles.product__name} style={{fontSize}}>
             {name}
             </h1>
 
-            <div className='product-buy'>
+            <div className={styles.product__buy}>
                 <button onClick={decrement}>-</button>
                 <div>{count}</div>
                 <button onClick={increment}>+</button>

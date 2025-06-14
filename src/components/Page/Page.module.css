@@ -1,9 +1,9 @@
-.Store {
+.Page {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    min-height: 2287px;
+    height: auto;
     background-color: #1d1d20;
     border-radius: 40px;
     padding-bottom: 15px;
@@ -17,7 +17,8 @@ header {
     display: flex;
     justify-content: center;
 }
-.header-content {
+
+.header__content {
     width: 900px;
     height: 35px;
     display: flex;
@@ -26,12 +27,12 @@ header {
     padding-top: 15px;
 }
 
-.header-content__title {
+.header__title {
     display: flex;
     gap: 10px;
 }
 
-.header-content__title::before {
+.header__title::before {
     content: "";
     background-image: url(/assets/header/store.1794c8b8.svg);
     background-position: 50%;
@@ -40,7 +41,7 @@ header {
     width: 40px;
 }
 
-.header-content__distributor {
+.header__distributor {
     background-color: #27272d;
     width: 187px;
     height: 40px;
@@ -49,7 +50,7 @@ header {
     grid-template-columns: 72% 28%;
 }
 
-.header-content__distributor::after {
+.header__distributor::after {
     content: "";
     background-image: url(/assets/header/xsolla.d08493f2.png);
     background-position: 50%;
@@ -60,7 +61,7 @@ header {
     margin-left: 10px;
 }
 
-.header-content__text {
+.header__text {
     width: 140px;
     height: 32px;
     padding: 5px 0 0 3px;
@@ -90,7 +91,6 @@ header {
     position: absolute;
     margin-top: 33px;
 }
-
 
 .navigation__link:hover {
     color: #ccc;
