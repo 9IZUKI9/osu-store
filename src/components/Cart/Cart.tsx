@@ -1,12 +1,11 @@
-import React from "react"
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import '../Styles/Store.css'
 import '../Styles/Cart.css'
-import NavBar from "../components/NavBar"
 
 function Cart() {
     return(
-        <div className="osu-page">
+        <div className='osu-page'>
             <header>
                 <div className='header-content'>
                     <div className='header-content__title'>
@@ -21,14 +20,28 @@ function Cart() {
                 </div>
             </header>
 
-            <NavBar />
+            <nav className='store-nav'>
+                <ul>
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>products</a>
+                    </li>
 
-            <div className="cart__info">
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>cart</a>
+                    </li>
+
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>order history</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div className='cart__info'>
                 <h1>Shopping Cart</h1>
                 <p>Your cart is empty.</p>
                 <p>
                     Return to the
-                    <a href="https://osu.ppy.sh/store/listing"> store listing </a>
+                    <a href='https://osu.ppy.sh/store/listing'> store listing </a>
                     to find some goodies!
                 </p>
             </div>

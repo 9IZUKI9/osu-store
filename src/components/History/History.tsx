@@ -1,6 +1,5 @@
-import React from "react"
+import React from 'react'
 import ReactDOM from 'react-dom/client'
-import NavBar from "../components/NavBar"
 
 
 function History() {
@@ -20,9 +19,23 @@ function History() {
                 </div>
             </header>
 
-            <NavBar />
+            <nav className='store-nav'>
+                <ul>
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>products</a>
+                    </li>
 
-            <div className="history">
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>cart</a>
+                    </li>
+
+                    <li className='store-nav__item'>
+                        <a className='store-nav__link' href='#'>order history</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div className='history'>
                 Хуй
             </div>
         </div>

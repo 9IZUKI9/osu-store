@@ -1,7 +1,7 @@
-import '../Styles/Home.css'
+import './Product.css'
 import { useState } from 'react';
 
-function StoreProduct({bg, column, row, width = '480px', height = '200px', name, fontSize = '30px'}) {
+function Product({bg, column, row, width = '480px', height = '200px', name, fontSize = '30px'}) {
 
     const [count, setCount] = useState(0)
     const increment = () => setCount(count + 1);
@@ -30,4 +30,4 @@ function StoreProduct({bg, column, row, width = '480px', height = '200px', name,
     )
 }
 
-export default StoreProduct
+export default Product

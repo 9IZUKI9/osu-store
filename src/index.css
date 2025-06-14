@@ -3,7 +3,7 @@
     font-family: Inter;
     font-style: normal;
     font-weight: 400;
-    src: url(/public/assets/fonts/Inter-Regular.1011a20f.woff2) format("woff2")
+    src: url(/assets/fonts/Inter-Regular.1011a20f.woff2) format("woff2")
 }
 
 @font-face {
@@ -68,7 +68,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #18181a;
-    min-height: 2287px;
     display: flex;
     justify-content: center;
     padding-top: 80px;
