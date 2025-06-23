@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Page.module.css'
+import { Link } from 'react-router-dom'
 
 type Props = {
     children: React.ReactNode,
@@ -24,15 +25,15 @@ function Page({ children }: Props) {
             <nav className={styles.navigation}>
                 <ul>
                     <li className={styles.navigation__item}>
-                        <a className={styles.navigation__link} href='#'>products</a>
+                        <Link className={styles.navigation__link} to='/'>products</Link>
                     </li>
 
                     <li className={styles.navigation__item}>
-                        <a className={styles.navigation__link} href='#'>cart</a>
+                        <Link className={styles.navigation__link} to='/osu-store/cart'>cart</Link>
                     </li>
 
                     <li className={styles.navigation__item}>
-                        <a className={styles.navigation__link} href='#'>order history</a>
+                        <Link className={styles.navigation__link} to='/osu-store/history'>order history</Link>
                     </li>
                 </ul>
             </nav>
