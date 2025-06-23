@@ -1,14 +1,17 @@
-import Page from '../Page/Page.tsx'
-import Home from '../Home/Home'
-import Cart from '../Cart/cart.tsx';
-import History from '../History/history.tsx';
+import { Home, History, Cart } from '../index'
+import { Route, Routes } from 'react-router-dom';
 import styles from './App.module.css'
 
 function App() {
     return (
         <div className={styles.app}>
-            <Home />
+            <Routes>
+                    <Route exact path='/' element={ <Home /> }/>
+                    <Route exact path='/osu-store/cart' element={ <Cart /> }/>
+                    <Route exact path='/osu-store/history' element={ <History /> }/>
+            </Routes>
         </div>
+        
     );
 }
 
