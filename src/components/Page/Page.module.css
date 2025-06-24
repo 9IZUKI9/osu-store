@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     width: 1000px;
-    height: auto;
+    min-height: 268.5px;
     background-color: #1d1d20;
     border-radius: 40px;
     padding-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 header {
@@ -85,7 +86,7 @@ header {
 
 .navigation ul::after {
     content: "";
-    width: 213px;
+    width: 221.23px;
     height: 1px;
     background-color: white;
     position: absolute;
