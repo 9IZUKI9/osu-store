@@ -7,7 +7,8 @@ function History() {
     return (
         <Page>
             <div className={styles.history}>
-                Хуй
+                <h1>Order History</h1>
+                <p>Your history is empty.</p>
             </div>
         </Page>
     )
