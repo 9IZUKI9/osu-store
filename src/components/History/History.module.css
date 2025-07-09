@@ -1,5 +1,9 @@
 .history {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    width: 91%;
+    height: auto;
+    padding: 20px 10px 33px 0px;
+    font-size: 30px;
+    gap: 10px;
 }

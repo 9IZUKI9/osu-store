@@ -72,7 +72,7 @@ header {
 
 .navigation {
     width: 100%;
-    height: 47.5px;
+    height: 47px;
     background-color: #1d1d20;
     display: flex;
     align-items: center;
@@ -86,13 +86,33 @@ header {
 
 .navigation ul::after {
     content: "";
-    width: 221.23px;
+    width: 221px;
     height: 1px;
     background-color: white;
     position: absolute;
     margin-top: 33px;
 }
 
+.navigation__link {
+    display: inline-block;
+    position: relative;
+}
+
 .navigation__link:hover {
-    color: #ccc;
+    color: #cecece !important;
+}
+
+.navigation__link::before {
+    content: "";
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 31px;
+}
+
+.navigation__link:hover::before {
+    visibility: visible;
 }
