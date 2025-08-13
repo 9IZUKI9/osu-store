@@ -1,4 +1,4 @@
-.cart__info {
+.cart {
     display: flex;
     flex-direction: column;
     width: 91%;
@@ -6,6 +6,33 @@
     padding: 20px 10px 33px 0px;
     font-size: 30px;
     gap: 10px;
+}
+
+.cart__item {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    align-items: center;
+}
+
+.cart__item input {
+    background-color: #232327;
+    color: white;
+    width: 45px;
+    border: none;
+    border-radius: 15px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.cart__item button {
+    background-color: #232327;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 100%;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 h1 {
