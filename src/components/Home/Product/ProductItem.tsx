@@ -2,16 +2,17 @@ import React, { useCallback } from 'react';
 import styles from './Product.module.css'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
-import { RootState } from '../../Redux/rootState.js'
-import { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } from '../../Redux/slice.js'
+import { RootState } from '../../Cart/rootState.js'
+import { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } from '../../Cart/slice.js'
 import { Product } from './ProductTypes'
+import { Link } from 'react-router-dom';
 
 interface ProductItemProps {
     product: Product;
 }
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
-    const { id, name, price, bg, row, column, width = '480px', height = '200px', fontSize = '30px' } = product
+    const { name, bg, row, column, width = '480px', height = '200px', fontSize = '30px', page } = product
     const dispatch = useDispatch()
     const cartItems = useSelector((state: RootState) => state.cart.items);
     const currentItem = cartItems.find(item => item.id === product.id);
@@ -32,9 +33,6 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
         e.preventDefault();
         e.stopPropagation();
 
-        const idToRemove = typeof product.id === 'string' ? parseInt(product.id) : product.id;
-        dispatch(removeFromCart(idToRemove));
-
         if (quantity === 1) {
         dispatch(removeFromCart(product.id));
         } else {
@@ -42,35 +40,36 @@ const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
         }
   }, [])
 
-
     return (
-        <a
+        <Link 
+            to={`${page}`}
             className={styles.product}
-            href="#"
-            style={{
-                width,
-                height,
-                backgroundImage: `url(${bg})`,
-                gridArea: `${row} / ${column}`
-            }}
+            style={{width, height, backgroundImage: `url(${bg})`, gridArea: `${row} / ${column}`}}
         >
             <h1 className={styles.product__name} style={{ fontSize }}>
                 {name}
             </h1>
+
+            <div className={styles.product__cost}>
+                ${(product.price * quantity).toFixed(2)}
+            </div>
+
             <div className={styles.product__buy}>
                 <button
                     className={styles.product__button}
-                    onClick={handleRemoveFromCart}>
+                    onClick={handleRemoveFromCart}
+                >
                     - 
                 </button>
                 {quantity}
-                <button 
+                <button
                     className={styles.product__button}
-                    onClick={handleAddToCart}>
+                    onClick={handleAddToCart}
+                >
                     + 
                 </button>
             </div>
-        </a>
+        </Link>
     );
 };
 
