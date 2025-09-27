@@ -7,7 +7,6 @@ function ProductPage() {
   const productComponents = new Map([
     ['1', <pages.Supporter />],
     ['2', <pages.Deskmats />],
-    // ...
   ]);
   
   if (!id || !productComponents.has(id)) {
